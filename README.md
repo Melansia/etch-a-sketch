@@ -5,17 +5,17 @@ A fun project to practice JavaScript, HTML, CSS, and Flexbox concepts. The goal 
 ## Assignment
 
 1. **Create the Grid Structure**
-   - [ ] Create a webpage with a 16x16 grid of square divs.
-   - [ ] Use JavaScript to dynamically create the grid. Do not create the divs manually in your HTML file.
-   - [ ] Place the grid squares inside a container `div` in your HTML file.
-   - [ ] Use Flexbox to arrange the divs into a grid layout.
-   - [ ] Avoid using CSS Grid for this project to specifically practice Flexbox.
+   - [x] Create a webpage with a 16x16 grid of square divs.
+   - [x] Use JavaScript to dynamically create the grid. Do not create the divs manually in your HTML file.
+   - [x] Place the grid squares inside a container `div` in your HTML file.
+   - [x] Use Flexbox to arrange the divs into a grid layout.
+   - [x] Avoid using CSS Grid for this project to specifically practice Flexbox.
        > **Hint**: Be cautious with borders and margins, as they can alter the size of your squares.
 
    - **Debugging Tips**:
-     - [ ] Ensure your CSS stylesheet is properly linked.
-     - [ ] Use browser developer tools to check for JavaScript errors or hidden elements.
-     - [ ] Add `console.log` statements in your JavaScript for troubleshooting.
+     - [x] Ensure your CSS stylesheet is properly linked.
+     - [x] Use browser developer tools to check for JavaScript errors or hidden elements.
+     - [x] Add `console.log` statements in your JavaScript for troubleshooting.
 
 2. **Add a Hover Effect**
    - [ ] Set up a hover effect so that the grid squares change color when the mouse passes over them, leaving a trail like a pen.
