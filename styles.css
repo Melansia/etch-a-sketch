@@ -2,6 +2,13 @@
     border: 1px solid black;
 } */
 
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
 .container {
     display: flex;
     flex-direction: column;
@@ -11,6 +18,9 @@
     height: 100vh;
     padding: 0;
     margin: 0;
+    background-color: bisque;
+    min-width: 1200px;
+    max-height: 1300px;
 }
 
 .board-container {
@@ -20,4 +30,21 @@
     height: 960px;
     padding: 0;
     border: 1px solid black;
+}
+
+.info{
+    font-size: 32px;
+}
+
+.reset,
+.resize {
+    background-color: #04AA6D; /* Green */
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 24px;
+    margin: 15px;
 }
