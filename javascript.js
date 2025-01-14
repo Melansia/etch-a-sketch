@@ -11,22 +11,35 @@ function drawBoard(bSize) {
         container.removeChild(container.firstChild);
     }
 
-    const size = Math.floor((container.offsetWidth - 3) / bSize);
+    const size = Math.floor((container.clientWidth) / bSize);
 
-    console.log(container.offsetWidth-3)
-    console.log(size)
-
-    for (let i = 0; i < bSize * bSize; i++) {
+    for(let i = 1; i <= bSize; i++) {
+      const row = document.createElement("div");
+      row.classList.add("row");
+      row.style.backgroundColor = "white";
+      row.style.flexGrow = "1"
+      row.style.flexShrink = "0";
+      row.style.flexBasis = `${size}px`
+      row.style.margin = "0"
+      row.style.padding = "0"
+      row.style.width = `${container.clientWidth}`
+      row.style.flexWrap = "nowrap"
+      row.style.display = "flex"
+      for (let j = 1; j <= bSize; j++) {
         const square = document.createElement("div");
-        square.style.width = `${size}px`;
-        square.style.height = `${size}px`;
+        square.style.margin = "0"
+        square.style.padding = "0"
+        square.style.flexBasis = `${size}px`
         square.style.border = "0.1px solid lightgrey";
         square.style.boxSizing = "border-box";
         square.style.flexGrow = "1"
         square.style.flexShrink = "0";
+        square.style.flexWrap = "wrap"
         square.style.backgroundColor = "white";
         square.classList.add("square")
-        container.appendChild(square);
+        row.appendChild(square);
+      }
+      container.appendChild(row);
     }
 
     boardInfo.textContent = `${bSize} x ${bSize}`
