@@ -11,7 +11,10 @@ function drawBoard(bSize) {
         container.removeChild(container.firstChild);
     }
 
-    const size = Math.floor(container.offsetWidth / bSize);
+    const size = Math.floor((container.offsetWidth - 3) / bSize);
+
+    console.log(container.offsetWidth-3)
+    console.log(size)
 
     for (let i = 0; i < bSize * bSize; i++) {
         const square = document.createElement("div");
@@ -36,9 +39,14 @@ resetButton.addEventListener("click", () => {
 })
 
 
-// TODO: implement a better error handling
 resizeButton.addEventListener("click", () => {
-    const newSize = parseInt(prompt("Enter the size of the new grid."));
+    let newSize = boardSize
+    while(true) {
+       newSize =  parseInt(prompt("Enter the size of the new grid. Must be an integer not bigger than 100 and not less than 0."));
+       if(typeof(newSize) == "number" && newSize > 0 && newSize <= 100) {
+            break 
+        }
+    }
     boardSize = newSize
     drawBoard(newSize)
 })
