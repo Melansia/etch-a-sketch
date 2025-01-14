@@ -18,21 +18,21 @@ A fun project to practice JavaScript, HTML, CSS, and Flexbox concepts. The goal 
      - [x] Add `console.log` statements in your JavaScript for troubleshooting.
 
 2. **Add a Hover Effect**
-   - [ ] Set up a hover effect so that the grid squares change color when the mouse passes over them, leaving a trail like a pen.
-   - [ ] Use event listeners for mouseenter or mouseover events to achieve the effect.
+   - [x] Set up a hover effect so that the grid squares change color when the mouse passes over them, leaving a trail like a pen.
+   - [x] Use event listeners for mouseenter or mouseover events to achieve the effect.
        > **Hint**: You can change the color of the divs by:
        - Adding a new class to the div.
        - Modifying the div's `background-color` using JavaScript.
 
 3. **Add Dynamic Grid Resizing**
-   - [ ] Add a button at the top of the screen to allow users to specify the number of squares per side for a new grid.
-   - [ ] Use a `prompt` to ask the user for the grid size.
-   - [ ] Remove the existing grid and generate a new grid in the same total space (e.g., 960px wide).
-   - [ ] Limit the maximum input size to 100 squares per side to avoid performance issues.
+   - [x] Add a button at the top of the screen to allow users to specify the number of squares per side for a new grid.
+   - [x] Use a `prompt` to ask the user for the grid size.
+   - [x] Remove the existing grid and generate a new grid in the same total space (e.g., 960px wide).
+   - [x] Limit the maximum input size to 100 squares per side to avoid performance issues.
        > **Tip**: If the user enters `64`, a new 64x64 grid should appear without altering the total space allocated for the grid.
 
 4. **Push the Project to GitHub**
-   - [ ] Once the project is complete, push it to a GitHub repository to showcase your work.
+   - [x] Once the project is complete, push it to a GitHub repository to showcase your work.
 
 ## Extra Credit
 
